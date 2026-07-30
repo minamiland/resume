@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  src:
+    url("/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.woff2") format("woff2"),
+    url("/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  src:
+    url("/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.woff2") format("woff2"),
+    url("/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  src:
+    url("/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff2") format("woff2"),
+    url("/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  src:
+    url("/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.woff2") format("woff2"),
+    url("/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Spoqa Han Sans Neo";
+  src:
+    url("/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff2") format("woff2"),
+    url("/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Design tokens ported from the Broadsheet design system (styles.css) —
+   only the tokens Resume.dc.html actually references. Declaring these
+   inside @theme makes Tailwind emit them as real CSS custom properties
+   on :root (so var(--color-text) etc. keep working, incl. inside the
+   <doc-page> shadow-DOM-adjacent slotted content) *and* generates
+   matching utilities (bg-bg, text-neutral-600, font-heading, ...). */
+@theme {
+  --color-bg: #f3f2f2;
+  --color-text: #201e1d;
+
+  --color-neutral-300: #d7d3d3;
+  --color-neutral-500: #9b9797;
+  --color-neutral-600: #7d7979;
+  --color-neutral-700: #605d5d;
+
+  --font-heading: "Spoqa Han Sans Neo", system-ui, sans-serif;
+  --font-body: "Spoqa Han Sans Neo", system-ui, sans-serif;
+}
+
+doc-page:not(:defined) {
+  visibility: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: var(--color-text);
+}
+a:hover {
+  color: var(--color-neutral-600);
+}
+
+.tl-item {
+  break-inside: avoid;
+  orphans: 3;
+  widows: 3;
+}

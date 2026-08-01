@@ -1,5 +1,5 @@
-import ResumeDocument from "./components/ResumeDocument";
+import AppRouter from './router';
 
 export default function App() {
-  return <ResumeDocument />;
+  return <AppRouter />;
 }

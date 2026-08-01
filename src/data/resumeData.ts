@@ -250,7 +250,6 @@ export const projects: Project[] = [
     client: 'CJ ENM · 시스템',
     role: '퍼블리싱 전담 (SI)',
     stack: ['Vue', 'Vuetify', 'Scss', 'Git'],
-    link: 'https://portfolio.sapjil.net/review/BZnSvLJYjf',
   },
   {
     period: '2018.01 ~ 2018.03',
@@ -259,7 +258,6 @@ export const projects: Project[] = [
     client: '삼성 · 시스템',
     role: '퍼블리싱 전담 (SI)',
     stack: ['HTML/CSS/jQuery', 'Scss', 'SVN'],
-    link: 'https://portfolio.sapjil.net/review/oXoGOSgd8jp',
   },
   {
     period: '2013.06 ~ 2017.12',
@@ -304,14 +302,14 @@ export interface DateEntry {
 export const education: DateEntry[] = [
   { date: '2008.03', label: '메이세이대학교 조형예술학과 졸업' },
   { date: '1999.02', label: '인덕대학교 시각디자인과 졸업' },
-  { date: '1994.02', label: '충암고등학교 졸업' },
+  // { date: '1994.02', label: '충암고등학교 졸업' },
 ];
 
 export const certifications: DateEntry[] = [
   { date: '2005.02', label: 'JLPT 1급' },
   {
     date: '2003.10 ~ 2005.03',
-    label: '일본어 어학 과정 · 관서외어전문학교(일본 오사카)',
+    label: '일본어 어학(오사카)',
   },
-  { date: '병역', label: '만기 전역' },
+  // { date: '병역', label: '만기 전역' },
 ];

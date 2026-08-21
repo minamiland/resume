@@ -94,7 +94,7 @@ export const projects: Project[] = [
     platform: ['Mobile'],
     client: '키움증권 · 증권',
     role: 'React 퍼블리싱 전담 (SI/PA)',
-    stack: ['React', 'TypeScript', 'Tailwind', 'Scss', 'Figma', 'Git', 'Claude Code', 'Claude Design'],
+    stack: ['React', 'TypeScript', 'Tailwind', 'Scss', 'Figma', 'Git', 'Codex', 'Claude Code', 'Claude Design'],
   },
   {
     period: '2026.03 ~ 2026.06',

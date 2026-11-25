@@ -93,7 +93,7 @@ export const projects: Project[] = [
     name: 'AI 컨시어지 서비스 구축 프로젝트',
     platform: ['Mobile'],
     client: '키움증권 · 증권',
-    role: 'React 퍼블리싱 전담 (SI/PA)',
+    role: 'React 퍼블리싱 전담 (SI|SM/PA)',
     stack: ['React', 'TypeScript', 'Tailwind', 'Scss', 'Figma', 'Git', 'Codex', 'Claude Code', 'Claude Design'],
   },
   // {
